@@ -1,20 +1,36 @@
-Demo: Business Website + Admin Panel
+# BizAdminKit
 
-1) Create and activate venv:
-   python3 -m venv venv
-   source venv/bin/activate   # Windows: venv\Scripts\activate
+BizAdminKit is a clean, modular starter kit for business websites with a built-in admin panel.  
+Perfect for agencies, freelancers, coaches, clinics, creators and local businesses who need a fast modern website with editable content.
 
-2) Install:
-   pip install -r requirements.txt
+This project gives you:
+- A modern, responsive business website
+- Service management
+- Lead capture system
+- Contact form (stored in DB)
+- Full admin panel (Flask-Admin)
+- SQLite database (zero config)
+- Easy deployment
 
-3) Run (first run will create sqlite DB):
-   python app.py
+---
 
-4) Open http://127.0.0.1:5000
-   Admin: http://127.0.0.1:5000/admin/
+## Features
+- Admin login system
+- Add/Edit/Delete services
+- Manage leads from contact form
+- Fully responsive Bootstrap UI
+- Clean routing and template structure
+- Ready to extend for client projects
 
-5) Create admin via CLI: (in new terminal with venv active)
-   flask create-admin
-   flask seed
+---
 
-Notes: Default DB is `app.db` in project folder.
+## Tech Stack
+- Python 3.10+
+- Flask (backend)
+- SQLAlchemy (ORM)
+- Flask-Login (authentication)
+- Flask-WTF (forms + validation)
+- Flask-Admin (admin dashboard)
+- Bootstrap 5 (frontend)
+- SQLite (local DB)
+
