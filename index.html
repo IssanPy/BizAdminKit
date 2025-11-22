@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Business Demo</h1>
+<div class="row">
+{% for s in services %}
+  <div class="col-md-6">
+    <h4>{{ s.title }}</h4>
+    <p>{{ s.description }}</p>
+    <strong>₹{{ s.price }}</strong>
+    <p><a href="{{ url_for('service_page', sid=s.id) }}">View</a></p>
+  </div>
+{% endfor %}
+</div>
+{% endblock %}
